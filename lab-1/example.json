@@ -1,0 +1,761 @@
+[
+  {
+    "name": "Wine - Crozes Hermitage E.",
+    "manufacturer": {
+      "name": "Yodoo",
+      "country": "Paraguay"
+    },
+    "date_of_manufacture": "2018-07-22",
+    "weight": 1.47,
+    "composition": [
+      {
+        "name": "METHIMAZOLE"
+      },
+      {
+        "name": "Stannous Fluoride"
+      },
+      {
+        "name": "Nifedipine"
+      },
+      {
+        "name": "Avobenzone, Octinoxate, Octisalate, Oxybenzone"
+      },
+      {
+        "name": "lamotrigine"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 24.7,
+      "fat": 63.2,
+      "carbohydrates": 31.9
+    }
+  },
+  {
+    "name": "Magnotta - Bel Paese White",
+    "manufacturer": {
+      "name": "Quatz",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-12-14",
+    "weight": 52.04,
+    "composition": [
+      {
+        "name": "Homeopathic Alopecia Areata Treatment"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 57.9,
+      "fat": 61.3,
+      "carbohydrates": 13.9
+    }
+  },
+  {
+    "name": "Pop - Club Soda Can",
+    "manufacturer": {
+      "name": "Leexo",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-07-03",
+    "weight": 4.92,
+    "composition": [
+      {
+        "name": "Enalapril Maleate and Hydrochlorothiazide"
+      },
+      {
+        "name": "Divalproex Sodium"
+      },
+      {
+        "name": "PETROLATUM"
+      },
+      {
+        "name": "Ethyl Alcohol"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 57.7,
+      "fat": 28.4,
+      "carbohydrates": 47.4
+    }
+  },
+  {
+    "name": "Milk - 2% 250 Ml",
+    "manufacturer": {
+      "name": "Realblab",
+      "country": "Brazil"
+    },
+    "date_of_manufacture": "2018-09-06",
+    "weight": 81.36,
+    "composition": [
+      {
+        "name": "Belladonna, Bellis perennis, Benzoicum acidum, Benzoicum acidum, Causticum, Equisetum hyemale, Lycopodium clavatum, Phosphorus, Plantago major, Rhus aromatica, Sepia"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 56.7,
+      "fat": 57.4,
+      "carbohydrates": 90.2
+    }
+  },
+  {
+    "name": "Icecream Cone - Areo Chocolate",
+    "manufacturer": {
+      "name": "Devify",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-08-05",
+    "weight": 57.55,
+    "composition": [
+      {
+        "name": "Alcohol"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 97.0,
+      "fat": 57.8,
+      "carbohydrates": 42.3
+    }
+  },
+  {
+    "name": "Fish - Scallops, Cold Smoked",
+    "manufacturer": {
+      "name": "Babbleset",
+      "country": "Indonesia"
+    },
+    "date_of_manufacture": "2018-06-03",
+    "weight": 17.89,
+    "composition": [
+      {
+        "name": "GABAPENTIN"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 10.6,
+      "fat": 90.2,
+      "carbohydrates": 7.8
+    }
+  },
+  {
+    "name": "Mix - Cappucino Cocktail",
+    "manufacturer": {
+      "name": "Babbleset",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-05-26",
+    "weight": 48.02,
+    "composition": [
+      {
+        "name": "Meclizine HCl"
+      },
+      {
+        "name": "Ibuprofen (NSAID)"
+      },
+      {
+        "name": "ACETAMINOPHEN and PHENYLEPHRINE HYDROCHLORIDE"
+      },
+      {
+        "name": "Amoxicillin"
+      },
+      {
+        "name": "Sodium Fluoride"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 88.8,
+      "fat": 37.5,
+      "carbohydrates": 35.5
+    }
+  },
+  {
+    "name": "Dc - Frozen Momji",
+    "manufacturer": {
+      "name": "Twitterwire",
+      "country": "Brazil"
+    },
+    "date_of_manufacture": "2018-03-28",
+    "weight": 18.36,
+    "composition": [
+      {
+        "name": "Alcohol"
+      },
+      {
+        "name": "Leucine, Phenylalanine, Lysine, Methionine, Isoleucine, Valine, Histidine, Threonine, Tryptophan, Alanine, Glycine, Arginine, Proline, Serine, Tyrosine, Dextrose"
+      },
+      {
+        "name": "Petrolatum"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 46.8,
+      "fat": 21.6,
+      "carbohydrates": 55.5
+    }
+  },
+  {
+    "name": "Muffins - Assorted",
+    "manufacturer": {
+      "name": "Gigashots",
+      "country": "Indonesia"
+    },
+    "date_of_manufacture": "2018-07-24",
+    "weight": 45.1,
+    "composition": [
+      {
+        "name": "Ampicillin Sodium"
+      },
+      {
+        "name": "not applicable"
+      },
+      {
+        "name": "date"
+      },
+      {
+        "name": "TRAMADOL HYDROCHLORIDE"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 42.6,
+      "fat": 91.5,
+      "carbohydrates": 20.3
+    }
+  },
+  {
+    "name": "Trueblue - Blueberry 12x473ml",
+    "manufacturer": {
+      "name": "Browsetype",
+      "country": "Philippines"
+    },
+    "date_of_manufacture": "2018-05-03",
+    "weight": 20.31,
+    "composition": [
+      {
+        "name": "meloxicam"
+      },
+      {
+        "name": "Aluminum Tetrachlorohydrex GLY"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 26.8,
+      "fat": 10.0,
+      "carbohydrates": 27.1
+    }
+  },
+  {
+    "name": "Arctic Char - Fillets",
+    "manufacturer": {
+      "name": "Centimia",
+      "country": "Cuba"
+    },
+    "date_of_manufacture": "2018-10-25",
+    "weight": 35.49,
+    "composition": [
+      {
+        "name": "Pine Australian Beefwood"
+      },
+      {
+        "name": "Pravastatin Sodium"
+      },
+      {
+        "name": "fluticasone propionate and salmeterol"
+      },
+      {
+        "name": "Levocetirizine Dihydrochloride"
+      },
+      {
+        "name": "Psyllium Husk"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 63.3,
+      "fat": 45.3,
+      "carbohydrates": 28.1
+    }
+  },
+  {
+    "name": "Wine - Magnotta, Merlot Sr Vqa",
+    "manufacturer": {
+      "name": "Skaboo",
+      "country": "Japan"
+    },
+    "date_of_manufacture": "2018-06-28",
+    "weight": 18.39,
+    "composition": [
+      {
+        "name": "trimethobenzamide hydrochloride"
+      },
+      {
+        "name": "Isopropyl Alcohol"
+      },
+      {
+        "name": "NAJA NAJA VENOM"
+      },
+      {
+        "name": "Zinc Oxide"
+      },
+      {
+        "name": "OCTINOXATE and TITANIUM DIOXIDE"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 20.3,
+      "fat": 14.7,
+      "carbohydrates": 60.7
+    }
+  },
+  {
+    "name": "Sprouts - Corn",
+    "manufacturer": {
+      "name": "Demimbu",
+      "country": "China"
+    },
+    "date_of_manufacture": "2019-01-16",
+    "weight": 59.77,
+    "composition": [
+      {
+        "name": "Fludeoxyglucose F-18"
+      },
+      {
+        "name": "Aluminum Zirconium Tetrachlorohydrex GLY"
+      },
+      {
+        "name": "Aluminum Zirconium Tetrachlorohydrex GLY"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 14.2,
+      "fat": 56.4,
+      "carbohydrates": 54.0
+    }
+  },
+  {
+    "name": "Fruit Mix - Light",
+    "manufacturer": {
+      "name": "Linkbuzz",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-07-11",
+    "weight": 72.38,
+    "composition": [
+      {
+        "name": "methylprednisolone"
+      },
+      {
+        "name": "prochlorperazine"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 18.5,
+      "fat": 81.5,
+      "carbohydrates": 91.0
+    }
+  },
+  {
+    "name": "Bread - White Mini Epi",
+    "manufacturer": {
+      "name": "Meejo",
+      "country": "Mauritius"
+    },
+    "date_of_manufacture": "2019-01-30",
+    "weight": 76.27,
+    "composition": [
+      {
+        "name": "Menthol"
+      },
+      {
+        "name": "Verapamil Hydrochloride"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 98.7,
+      "fat": 87.9,
+      "carbohydrates": 75.5
+    }
+  },
+  {
+    "name": "Cheese - Pont Couvert",
+    "manufacturer": {
+      "name": "Ntag",
+      "country": "Nicaragua"
+    },
+    "date_of_manufacture": "2018-06-29",
+    "weight": 63.24,
+    "composition": [
+      {
+        "name": "Arsenicum album, Berberis vulgaris, Bryonia alba, Calcarea carbonica, Carduus marianus, Cinchona officinalis, Kali Carbonicum, Lycopodium clavatum, Natrum sulphuricum, Nux vomica, Phosphorus,"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 92.3,
+      "fat": 37.6,
+      "carbohydrates": 22.7
+    }
+  },
+  {
+    "name": "Cod - Salted, Boneless",
+    "manufacturer": {
+      "name": "Centizu",
+      "country": "Dominican Republic"
+    },
+    "date_of_manufacture": "2018-07-12",
+    "weight": 81.64,
+    "composition": [
+      {
+        "name": "amlodipine besylate"
+      },
+      {
+        "name": "Bacitracin Zinc, Neomycin Sulfate, Polymyxin B Sulfate, and Pramoxine Hydrochloride"
+      },
+      {
+        "name": "Minoxidil"
+      },
+      {
+        "name": "menthol, methyl salicylate"
+      },
+      {
+        "name": "OCTINOXATE and TITANIUM DIOXIDE"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 66.1,
+      "fat": 50.3,
+      "carbohydrates": 51.7
+    }
+  },
+  {
+    "name": "Jerusalem Artichoke",
+    "manufacturer": {
+      "name": "Jaxbean",
+      "country": "Portugal"
+    },
+    "date_of_manufacture": "2018-11-17",
+    "weight": 81.82,
+    "composition": [
+      {
+        "name": "ALUMINUM HYDROXIDE,MAGNESIUM HYDROXIDE"
+      },
+      {
+        "name": "didanosine enteric-coated beadlets"
+      },
+      {
+        "name": "Triclosan"
+      },
+      {
+        "name": "Aspirin"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 54.8,
+      "fat": 20.1,
+      "carbohydrates": 88.0
+    }
+  },
+  {
+    "name": "Garbage Bag - Clear",
+    "manufacturer": {
+      "name": "Innojam",
+      "country": "Ukraine"
+    },
+    "date_of_manufacture": "2018-05-18",
+    "weight": 13.84,
+    "composition": [
+      {
+        "name": "Valproate Sodium"
+      },
+      {
+        "name": "Amoxicillin and Clavulanate Potassium"
+      },
+      {
+        "name": "PRAVASTATIN SODIUM"
+      },
+      {
+        "name": "Famotidine"
+      },
+      {
+        "name": "SALICYLIC ACID"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 58.9,
+      "fat": 89.0,
+      "carbohydrates": 6.1
+    }
+  },
+  {
+    "name": "Tumeric",
+    "manufacturer": {
+      "name": "Skinder",
+      "country": "Vietnam"
+    },
+    "date_of_manufacture": "2018-06-01",
+    "weight": 33.31,
+    "composition": [
+      {
+        "name": "Alcohol"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 38.9,
+      "fat": 31.0,
+      "carbohydrates": 26.0
+    }
+  },
+  {
+    "name": "Asparagus - White, Fresh",
+    "manufacturer": {
+      "name": "Kwideo",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-12-01",
+    "weight": 45.78,
+    "composition": [
+      {
+        "name": "Psyllium"
+      },
+      {
+        "name": "Testosterone Cypionate"
+      },
+      {
+        "name": "Pravastatin Sodium"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 2.6,
+      "fat": 38.3,
+      "carbohydrates": 22.8
+    }
+  },
+  {
+    "name": "Beef - Short Loin",
+    "manufacturer": {
+      "name": "Twitterbridge",
+      "country": "Indonesia"
+    },
+    "date_of_manufacture": "2018-03-13",
+    "weight": 90.78,
+    "composition": [
+      {
+        "name": "Dantrolene Sodium"
+      },
+      {
+        "name": "Oxygen"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 85.7,
+      "fat": 81.2,
+      "carbohydrates": 31.2
+    }
+  },
+  {
+    "name": "Goldschalger",
+    "manufacturer": {
+      "name": "Bubblemix",
+      "country": "Indonesia"
+    },
+    "date_of_manufacture": "2018-12-24",
+    "weight": 18.15,
+    "composition": [
+      {
+        "name": "Zinc Oxide"
+      },
+      {
+        "name": "Amlodipine Besylate and Benazepril Hydrochloride"
+      },
+      {
+        "name": "Docusate sodium"
+      },
+      {
+        "name": "Aluminum Zirconium Tricholorohydrex GLY"
+      },
+      {
+        "name": "Loratadine"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 27.0,
+      "fat": 12.4,
+      "carbohydrates": 52.6
+    }
+  },
+  {
+    "name": "Soup Campbells Turkey Veg.",
+    "manufacturer": {
+      "name": "Tagfeed",
+      "country": "Croatia"
+    },
+    "date_of_manufacture": "2018-12-17",
+    "weight": 84.65,
+    "composition": [
+      {
+        "name": "Atenolol"
+      },
+      {
+        "name": "levothyroxine sodium"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 32.9,
+      "fat": 97.2,
+      "carbohydrates": 48.3
+    }
+  },
+  {
+    "name": "Juice - Orangina",
+    "manufacturer": {
+      "name": "Wikizz",
+      "country": "Philippines"
+    },
+    "date_of_manufacture": "2019-01-19",
+    "weight": 25.59,
+    "composition": [
+      {
+        "name": "Aspirin"
+      },
+      {
+        "name": "Ceftriaxone"
+      },
+      {
+        "name": "CEFTAZIDIME"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 40.1,
+      "fat": 50.4,
+      "carbohydrates": 23.1
+    }
+  },
+  {
+    "name": "Mudslide",
+    "manufacturer": {
+      "name": "Kwimbee",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-03-15",
+    "weight": 7.47,
+    "composition": [
+      {
+        "name": "BENZALKONIUM CHLORIDE Health-care Personnel Handwash"
+      },
+      {
+        "name": "RABBIT"
+      },
+      {
+        "name": "Aminophylline Dihydrate"
+      },
+      {
+        "name": "Doxycycline Hyclate"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 94.4,
+      "fat": 31.9,
+      "carbohydrates": 90.6
+    }
+  },
+  {
+    "name": "Mushroom - Chanterelle, Dry",
+    "manufacturer": {
+      "name": "Realbuzz",
+      "country": "China"
+    },
+    "date_of_manufacture": "2018-09-06",
+    "weight": 44.06,
+    "composition": [
+      {
+        "name": "nitroglycerin"
+      },
+      {
+        "name": "taraxacum officinale pollen"
+      },
+      {
+        "name": "Metoprolol Tartrate"
+      },
+      {
+        "name": "Fluoride"
+      },
+      {
+        "name": "HYDROQUINONE"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 70.9,
+      "fat": 41.9,
+      "carbohydrates": 12.9
+    }
+  },
+  {
+    "name": "Vegetable - Base",
+    "manufacturer": {
+      "name": "Pixope",
+      "country": "Russia"
+    },
+    "date_of_manufacture": "2018-11-23",
+    "weight": 27.48,
+    "composition": [
+      {
+        "name": "guaifenesin dextromethorphan HBr"
+      },
+      {
+        "name": "Sodium Fluoride"
+      },
+      {
+        "name": "Apple Malus sp."
+      },
+      {
+        "name": "SODIUM CHLORIDE"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 58.1,
+      "fat": 86.5,
+      "carbohydrates": 29.6
+    }
+  },
+  {
+    "name": "Kellogs Raisan Bran Bars",
+    "manufacturer": {
+      "name": "Leenti",
+      "country": "Portugal"
+    },
+    "date_of_manufacture": "2019-02-04",
+    "weight": 28.34,
+    "composition": [
+      {
+        "name": "Tolnafate, Triclosan"
+      },
+      {
+        "name": "Imipramine Hydrochloride"
+      },
+      {
+        "name": "Bupropion Hydrochloride"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 40.6,
+      "fat": 33.9,
+      "carbohydrates": 1.1
+    }
+  },
+  {
+    "name": "Wine - Casillero Del Diablo",
+    "manufacturer": {
+      "name": "Yakijo",
+      "country": "Morocco"
+    },
+    "date_of_manufacture": "2018-11-14",
+    "weight": 87.44,
+    "composition": [
+      {
+        "name": "Capsaicin, Lidocaine, Menthol, and Methyl Salicylate"
+      },
+      {
+        "name": "Cefaclor"
+      }
+    ],
+    "nutritional_value": {
+      "protein": 81.5,
+      "fat": 92.5,
+      "carbohydrates": 35.0
+    }
+  }
+]
