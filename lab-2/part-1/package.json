@@ -1,0 +1,16 @@
+{
+  "name": "lab-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "native:connect": "node ./scripts/native/connect",
+    "odm:connect": "node ./scripts/odm/connect"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "file:npm-offline/mongodb-3.2.3.tgz",
+    "mongoose": "file:npm-offline/mongoose-5.4.22.tgz"
+  }
+}

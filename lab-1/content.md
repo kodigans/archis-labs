@@ -484,7 +484,7 @@ TODO: описать группу .findOneAnd...()
 
 ```
 > cd c:/mongodb
-> mongoexport ./bin/mongoexport --db [dbname] --collection [colname] --out c:/mongodb/data/[collection].json
+> ./bin/mongoexport --db [dbname] --collection [colname] --out c:/mongodb/data/[collection].json
 connected to: 127.0.0.1
 exported [n] records
 ```
@@ -497,7 +497,7 @@ exported [n] records
 
 ```
 > cd c:/mongodb
-> mongoimport ./bin/mongoimport -db [dbname] --collection [colname] --jsonArray c:/mongodb/data/[collection].json
+> ./bin/mongoimport --db [dbname] --collection [colname] --jsonArray c:/mongodb/data/[collection].json
 connected to: 127.0.0.1
 imported [n] records
 ```
