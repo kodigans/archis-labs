@@ -1,5 +1,5 @@
 {
-  "name": "lab-2",
+  "name": "part-1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,7 +10,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "file:npm-offline/mongodb-3.2.3.tgz",
-    "mongoose": "file:npm-offline/mongoose-5.4.22.tgz"
-  }
+    "mongodb": "^2.2.30",
+    "mongoose": "^5.5.0"
+  },
+  "bundledDependencies": [
+    "mongodb",
+    "mongoose"
+  ]
 }

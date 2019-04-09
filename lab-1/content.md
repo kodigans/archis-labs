@@ -18,12 +18,6 @@ TODO: добавить работу с графической оболочкой
 
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
 
-TODO: добавить работу с нативным драйвером mongodb и с mongoose.
-
-- [Node.js](https://nodejs.org/en/) (включает npm)
-
-- [Mongoose ODM](https://www.npmjs.com/package/mongoose) (через npm)
-
 ### Быстрый переход
 
 - [1 Установка MongoDB](#-1-Установка-MongoDB)
@@ -597,8 +591,6 @@ TODO: зафиксировать варианты в таблице студен
 - [MondoDB](https://docs.mongodb.com/manual/mongo/)
 
 - [MongoDB Compass](https://docs.mongodb.com/compass/current/)
-
-- [Mongoose ODM](https://mongoosejs.com/docs/index.html)
 
 ### Руководства, статьи
 
