@@ -5,12 +5,19 @@
   "main": "index.js",
   "scripts": {
     "native:connect": "node ./scripts/native/connect",
-    "odm:connect": "node ./scripts/odm/connect"
+    "native:insert": "node ./scripts/native/insert",
+    "native:find-all": "node ./scripts/native/find-all",
+    "native:find-by-query": "node ./scripts/native/find-by-query",
+    "native:update": "node ./scripts/native/update",
+    "native:remove": "node ./scripts/native/remove",
+    "odm:connect": "node ./scripts/odm/connect",
+    "odm:insert": "node ./scripts/odm/insert",
+    "odm:find-all": "node ./scripts/odm/find-all"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mongodb": "^2.2.30",
+    "mongodb": "^3.2.3",
     "mongoose": "^5.5.0"
   },
   "bundledDependencies": [
