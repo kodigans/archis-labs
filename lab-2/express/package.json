@@ -1,5 +1,5 @@
 {
-  "name": "part-2",
+  "name": "lab-2-express",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,12 +12,9 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "mongodb": "^3.2.3",
-    "mongoose": "^5.5.0",
-    "nodemon": "^1.18.11"
+    "mongoose": "^5.5.0"
   },
-  "bundledDependencies": [
-    "express",
-    "mongodb",
-    "mongoose"
-  ]
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  }
 }
