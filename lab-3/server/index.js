@@ -1,11 +1,13 @@
 var jsonServer = require('json-server');
 
 var server = jsonServer.create();
-var router = jsonServer.router('./db.json');
 var middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
+
+var router = jsonServer.router('./db.json');
+
 server.use('/api', router);
 
 var port = 3000;

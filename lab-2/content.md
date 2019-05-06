@@ -17,3 +17,5 @@
 `./bin/mongoimport --db [dbname] --collection [colname] --jsonArray c:/mongodb/data/[collection].json`
 
 about npm
+
+сделать автогенератор id

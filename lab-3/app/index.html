@@ -11,7 +11,36 @@
   </head>
 
   <body>
-    <h1>hello</h1>
+    <h1>Clients List</h1>
+
+    <div id="clients-list"></div>
+
+    <h1>Add new client</h1>
+
+    <form
+      id="addClientForm"
+      method="POST"
+      action="http://localhost:3000/api/clients"
+      enctype="application/x-www-form-urlencoded"
+    >
+      <div>
+        <label>Id</label>
+        <input name="id" type="text" />
+      </div>
+      <div>
+        <label>First name</label>
+        <input name="first_name" type="text" />
+      </div>
+      <div>
+        <label>Last name</label>
+        <input name="last_name" type="text" />
+      </div>
+      <div>
+        <label>Email</label>
+        <input name="email" type="email" />
+      </div>
+      <button type="submit">Add</button>
+    </form>
 
     <!-- сторонние скрипты -->
     <script src="./vendors/jquery/jquery-3.4.1.min.js"></script>
