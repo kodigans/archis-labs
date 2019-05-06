@@ -1,0 +1,204 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "first_name": "Adrianne",
+      "last_name": "Fabb",
+      "gender": "Female",
+      "date_of_birth": "1982-01-12",
+      "address": "9 Towne Alley",
+      "phone": "234-572-0188",
+      "email": "afabb0@webmd.com"
+    },
+    {
+      "id": 2,
+      "first_name": "Smith",
+      "last_name": "Guterson",
+      "gender": "Male",
+      "date_of_birth": "2000-01-26",
+      "address": "80833 Troy Avenue",
+      "phone": "260-284-2259",
+      "email": "sguterson1@meetup.com"
+    },
+    {
+      "id": 3,
+      "first_name": "Tobit",
+      "last_name": "Ferrucci",
+      "gender": "Male",
+      "date_of_birth": "2009-08-27",
+      "address": "31 Di Loreto Circle",
+      "phone": "107-431-3319",
+      "email": "tferrucci2@upenn.edu"
+    },
+    {
+      "id": 4,
+      "first_name": "Gideon",
+      "last_name": "Riddington",
+      "gender": "Male",
+      "date_of_birth": "1983-08-11",
+      "address": "991 Fair Oaks Junction",
+      "phone": "704-189-5323",
+      "email": "griddington3@zdnet.com"
+    },
+    {
+      "id": 5,
+      "first_name": "Hewitt",
+      "last_name": "Hampe",
+      "gender": "Male",
+      "date_of_birth": "1996-12-03",
+      "address": "514 Golden Leaf Place",
+      "phone": "541-716-7593",
+      "email": "hhampe4@theatlantic.com"
+    },
+    {
+      "id": 6,
+      "first_name": "Abel",
+      "last_name": "Behn",
+      "gender": "Male",
+      "date_of_birth": "2000-08-15",
+      "address": "4 Sloan Drive",
+      "phone": "450-449-1310",
+      "email": "abehn5@blog.com"
+    },
+    {
+      "id": 7,
+      "first_name": "Bettine",
+      "last_name": "Manthroppe",
+      "gender": "Female",
+      "date_of_birth": "1994-03-25",
+      "address": "11446 Algoma Alley",
+      "phone": "300-857-1639",
+      "email": "bmanthroppe6@prlog.org"
+    },
+    {
+      "id": 8,
+      "first_name": "Roderic",
+      "last_name": "Markushkin",
+      "gender": "Male",
+      "date_of_birth": "2010-09-20",
+      "address": "4 Darwin Street",
+      "phone": "707-113-1572",
+      "email": "rmarkushkin7@army.mil"
+    },
+    {
+      "id": 9,
+      "first_name": "Karlyn",
+      "last_name": "Kingswood",
+      "gender": "Female",
+      "date_of_birth": "1994-02-25",
+      "address": "20254 Oxford Street",
+      "phone": "217-674-5048",
+      "email": "kkingswood8@storify.com"
+    },
+    {
+      "id": 10,
+      "first_name": "Julius",
+      "last_name": "Lethley",
+      "gender": "Male",
+      "date_of_birth": "1995-03-30",
+      "address": "42 Fairfield Point",
+      "phone": "157-437-2935",
+      "email": "jlethley9@auda.org.au"
+    },
+    {
+      "id": 11,
+      "first_name": "Juan",
+      "last_name": "Mathelin",
+      "gender": "Male",
+      "date_of_birth": "1998-07-18",
+      "address": "159 Emmet Way",
+      "phone": "271-220-2353",
+      "email": "jmathelina@msn.com"
+    },
+    {
+      "id": 12,
+      "first_name": "Fannie",
+      "last_name": "Webb-Bowen",
+      "gender": "Female",
+      "date_of_birth": "1985-10-08",
+      "address": "77 Barby Parkway",
+      "phone": "833-747-2377",
+      "email": "fwebbbowenb@twitpic.com"
+    },
+    {
+      "id": 13,
+      "first_name": "Hermia",
+      "last_name": "Paffot",
+      "gender": "Female",
+      "date_of_birth": "2004-04-06",
+      "address": "5 Hermina Avenue",
+      "phone": "469-129-7686",
+      "email": "hpaffotc@devhub.com"
+    },
+    {
+      "id": 14,
+      "first_name": "Sisile",
+      "last_name": "Giovannetti",
+      "gender": "Female",
+      "date_of_birth": "2002-07-19",
+      "address": "6860 Dunning Circle",
+      "phone": "284-331-5466",
+      "email": "sgiovannettid@un.org"
+    },
+    {
+      "id": 15,
+      "first_name": "Filip",
+      "last_name": "Castellucci",
+      "gender": "Male",
+      "date_of_birth": "1984-05-05",
+      "address": "9 Manley Terrace",
+      "phone": "672-945-2894",
+      "email": "fcastelluccie@jimdo.com"
+    },
+    {
+      "id": 16,
+      "first_name": "Lannie",
+      "last_name": "Alfonsini",
+      "gender": "Male",
+      "date_of_birth": "1995-12-17",
+      "address": "99123 Monument Point",
+      "phone": "566-591-3878",
+      "email": "lalfonsinif@washingtonpost.com"
+    },
+    {
+      "id": 17,
+      "first_name": "Abrahan",
+      "last_name": "Nazareth",
+      "gender": "Male",
+      "date_of_birth": "1993-07-24",
+      "address": "47966 Coolidge Circle",
+      "phone": "390-984-0180",
+      "email": "anazarethg@nymag.com"
+    },
+    {
+      "id": 18,
+      "first_name": "Jamesy",
+      "last_name": "Durno",
+      "gender": "Male",
+      "date_of_birth": "2000-01-03",
+      "address": "48 Hermina Avenue",
+      "phone": "481-121-8235",
+      "email": "jdurnoh@phpbb.com"
+    },
+    {
+      "id": 19,
+      "first_name": "Ulysses",
+      "last_name": "McCarl",
+      "gender": "Male",
+      "date_of_birth": "2000-01-30",
+      "address": "01177 Green Ridge Drive",
+      "phone": "826-592-0856",
+      "email": "umccarli@usatoday.com"
+    },
+    {
+      "id": 20,
+      "first_name": "Vevay",
+      "last_name": "Kingstne",
+      "gender": "Female",
+      "date_of_birth": "1995-12-12",
+      "address": "937 Sycamore Crossing",
+      "phone": "134-484-3572",
+      "email": "vkingstnej@sciencedirect.com"
+    }
+  ]
+}
