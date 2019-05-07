@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", ready);
 webpack
 
 DOM
+frameworks
 events
 
 XMLHTTPRequest

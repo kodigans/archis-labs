@@ -2,6 +2,15 @@ var apiUrl = 'http://localhost:3000/api';
 
 fetch(apiUrl + '/clients').then(function(res) {
   console.log(res.json());
+
+  var data = res.json();
+
+  var tableBlock = document.getElementById('clientsList');
+  data.forEach(function(item, index) {
+    var row = document.createElement('tr');
+    row.innerHTML = '<td></td>';
+    tableBlock.appendChild(row);
+  });
 });
 
 function formDataToJSON(formData) {
