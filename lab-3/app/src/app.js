@@ -1,31 +1,112 @@
 var apiUrl = 'http://localhost:3000/api';
 
-fetch(apiUrl + '/clients').then(function(res) {
-  console.log(res.json());
+// ф-ия отрисовки таблицы с данными
+function renderClientsGrid(data) {
+  var clientsGridEl = document.getElementById('clientsGrid');
 
-  var data = res.json();
+  // TODO удалить строки
 
-  var tableBlock = document.getElementById('clientsList');
   data.forEach(function(item, index) {
-    var row = document.createElement('tr');
-    row.innerHTML = '<td></td>';
-    tableBlock.appendChild(row);
+    var rowEl = document.createElement('tr');
+    rowEl.innerHTML =
+      '<td class="js-clientId">' +
+      item.id +
+      '</td>' +
+      '<td>' +
+      item.first_name +
+      '</td>' +
+      '<td>' +
+      item.last_name +
+      '</td>' +
+      '<td>' +
+      item.gender +
+      '</td>' +
+      '<td>' +
+      item.date_of_birth +
+      '</td>' +
+      '<td>' +
+      item.address +
+      '</td>' +
+      '<td>' +
+      item.phone +
+      '</td>' +
+      '<td>' +
+      item.email +
+      '</td>' +
+      '<td><button class="js-deleteClientBtn">Delete</button><button class="js-editClientBtn">Edit</button></td>';
+    clientsGridEl.appendChild(rowEl);
   });
-});
-
-function formDataToJSON(formData) {
-  var object = {};
-
-  formData.forEach(function(value, key) {
-    object[key] = value;
-  });
-
-  return JSON.stringify(object);
 }
 
-var addClientForm = document.getElementById('addClientForm');
+function deleteClient(id) {
+  fetch(apiUrl + '/clients', {
+    method: 'DELETE',
+    headers,
+    body: formDataToJSON(formData)
+  })
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      // обновляем таблицу после каждого добавления
+      refreshClientsGrid();
+    });
+}
 
-addClientForm.addEventListener('submit', function(event) {
+// ф-ия добавления обработчиков на кнопки удаления и обновления
+function addClientRowHandlers() {
+  var deleteClientBtnEls = document.getElementsByClassName(
+    'js-deleteClientBtn'
+  );
+
+  for (var i = 0; i < deleteClientBtnEls.length; i++) {
+    var item = deleteClientBtnEls[i];
+
+    item.addEventListener('click', function() {
+      var id = +item.parentElement.parentElement.getElementsByClassName(
+        'js-clientId'
+      )[0].innerHTML;
+
+      console.log(id);
+    });
+  }
+
+  var editClientBtnEls = document.getElementsByClassName('js-editClientBtn');
+
+  for (var i = 0; i < editClientBtnEls.length; i++) {
+    var item = editClientBtnEls[i];
+
+    item.addEventListener('click', function() {
+      var id = item.closest('js-clientId');
+
+      console.log(id);
+    });
+  }
+}
+
+// ф-ия обновления таблицы (новый запрос данных)
+function refreshClientsGrid() {
+  fetch(apiUrl + '/clients')
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      renderClientsGrid(data);
+      addClientRowHandlers();
+    });
+}
+
+// обновляем таблицу первый раз
+refreshClientsGrid();
+
+// импорт из другого файла
+var formDataToJSON = require('./utils').formDataToJSON;
+var addClientFormEl = document.getElementById('addClientForm');
+
+addClientFormEl.addEventListener('submit', function(event) {
+  // блокируем обработчик по-умолчанию
   event.preventDefault();
 
   var headers = new Headers();
@@ -38,7 +119,13 @@ addClientForm.addEventListener('submit', function(event) {
     method: 'POST',
     headers,
     body: formDataToJSON(formData)
-  }).then(function(res) {
-    console.log(res.json());
-  });
+  })
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      // обновляем таблицу после каждого добавления
+      refreshClientsGrid();
+    });
 });
