@@ -191,22 +191,14 @@
       "email": "umccarli@usatoday.com"
     },
     {
-      "id": 21,
-      "first_name": "sdfasdfasdf",
-      "last_name": "asdasdasd",
-      "email": ""
-    },
-    {
-      "id": 22,
-      "first_name": "sdfsdf",
-      "last_name": "sdfsdf",
-      "email": ""
-    },
-    {
-      "id": 23,
-      "first_name": "adasd",
-      "last_name": "asdad",
-      "email": ""
+      "id": 20,
+      "first_name": "Vevay",
+      "last_name": "Kingstne",
+      "gender": "Female",
+      "date_of_birth": "1995-12-12",
+      "address": "937 Sycamore Crossing",
+      "phone": "134-484-3572",
+      "email": "vkingstnej@sciencedirect.com"
     }
   ]
 }

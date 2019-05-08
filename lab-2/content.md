@@ -18,4 +18,4 @@
 
 about npm
 
-сделать автогенератор id
+multicollection request
