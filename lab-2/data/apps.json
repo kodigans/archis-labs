@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Voltsillam",
+    "description": "about.me",
+    "price": 90000,
+    "date_of_release": "2019-04-11"
+  },
+  {
+    "id": 2,
+    "title": "Konklux",
+    "description": "ucoz.ru",
+    "price": 30000,
+    "date_of_release": "2018-05-19"
+  },
+  {
+    "id": 3,
+    "title": "Sonair",
+    "description": "geocities.jp",
+    "price": 30000,
+    "date_of_release": "2018-11-15"
+  },
+  {
+    "id": 4,
+    "title": "Opela",
+    "description": "addtoany.com",
+    "price": 20000,
+    "date_of_release": "2018-05-17"
+  },
+  {
+    "id": 5,
+    "title": "Biodex",
+    "description": "engadget.com",
+    "price": 50000,
+    "date_of_release": "2018-12-20"
+  }
+]

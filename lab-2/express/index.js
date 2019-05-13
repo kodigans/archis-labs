@@ -1,23 +1,17 @@
 var express = require('express');
-var bodyParser = require('body-parser');
 var app = express();
-
-var MongoClient = require('mongodb').MongoClient;
+var bodyParser = require('body-parser');
 
 var url = 'mongodb://localhost:27017';
 var dbName = 'mydb';
 
+var MongoClient = require('mongodb').MongoClient;
 var client = new MongoClient(url, { useNewUrlParser: true });
-var db = client.db(dbName);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function(req, res) {
-  res.send('Hello World!');
-});
-
-app.get('/clients', function(req, res) {
+app.get('/api/clients', function(req, res) {
   client.connect(function(err) {
     if (err) {
       console.log(err);
@@ -25,10 +19,22 @@ app.get('/clients', function(req, res) {
     } else {
       console.log('Connected successfully to server');
 
+      var db = client.db(dbName);
       var collection = db.collection('clients');
 
       collection.find({}).toArray(function(err, docs) {
-        res.send(docs);
+        // сортируем по id
+        var sortedDocs = docs.sort(function(a, b) {
+          if (a.id > b.id) {
+            return 1;
+          } else if (a.id < b.id) {
+            return -1;
+          } else {
+            return 0;
+          }
+        });
+
+        res.send(sortedDocs);
       });
     }
 
@@ -36,7 +42,7 @@ app.get('/clients', function(req, res) {
   });
 });
 
-app.get('/clients/:id', function(req, res) {
+app.get('/api/clients/:id', function(req, res) {
   client.connect(function(err) {
     if (err) {
       console.log(err);
@@ -44,6 +50,7 @@ app.get('/clients/:id', function(req, res) {
     } else {
       console.log('Connected successfully to server');
 
+      var db = client.db(dbName);
       var collection = db.collection('clients');
 
       collection.find({ id: +req.params.id }).toArray(function(err, docs) {
@@ -55,7 +62,7 @@ app.get('/clients/:id', function(req, res) {
   });
 });
 
-app.post('/clients', function(req, res) {
+app.post('/api/clients', function(req, res) {
   client.connect(function(err) {
     if (err) {
       console.log(err);
@@ -64,10 +71,14 @@ app.post('/clients', function(req, res) {
       console.log('Connected successfully to server');
       console.log(req.body);
 
+      var db = client.db(dbName);
       var collection = db.collection('clients');
 
       collection.insertOne(req.body).then(function(result) {
-        console.log('new doc have been inserted into clients', result.result);
+        console.log(
+          'New doc has been successfuly inserted into clients',
+          result.result
+        );
         res.send(result);
       });
     }
@@ -76,6 +87,8 @@ app.post('/clients', function(req, res) {
   });
 });
 
-app.listen(3000, function() {
-  console.log('Example app listening on port 3000!');
+var port = 3000;
+
+app.listen(port, function() {
+  console.log('Express is running on port', port);
 });

@@ -1,0 +1,102 @@
+[
+  {
+    "client_id": 9,
+    "app_id": 5,
+    "count": 40
+  },
+  {
+    "client_id": 18,
+    "app_id": 2,
+    "count": 80
+  },
+  {
+    "client_id": 5,
+    "app_id": 1,
+    "count": 100
+  },
+  {
+    "client_id": 9,
+    "app_id": 2,
+    "count": 70
+  },
+  {
+    "client_id": 2,
+    "app_id": 3,
+    "count": 40
+  },
+  {
+    "client_id": 18,
+    "app_id": 3,
+    "count": 20
+  },
+  {
+    "client_id": 12,
+    "app_id": 3,
+    "count": 10
+  },
+  {
+    "client_id": 6,
+    "app_id": 5,
+    "count": 60
+  },
+  {
+    "client_id": 5,
+    "app_id": 2,
+    "count": 20
+  },
+  {
+    "client_id": 6,
+    "app_id": 4,
+    "count": 100
+  },
+  {
+    "client_id": 6,
+    "app_id": 4,
+    "count": 30
+  },
+  {
+    "client_id": 9,
+    "app_id": 1,
+    "count": 10
+  },
+  {
+    "client_id": 8,
+    "app_id": 4,
+    "count": 100
+  },
+  {
+    "client_id": 8,
+    "app_id": 5,
+    "count": 70
+  },
+  {
+    "client_id": 2,
+    "app_id": 2,
+    "count": 20
+  },
+  {
+    "client_id": 2,
+    "app_id": 1,
+    "count": 50
+  },
+  {
+    "client_id": 2,
+    "app_id": 2,
+    "count": 30
+  },
+  {
+    "client_id": 3,
+    "app_id": 2,
+    "count": 50
+  },
+  {
+    "client_id": 6,
+    "app_id": 4,
+    "count": 100
+  },
+  {
+    "client_id": 6,
+    "app_id": 1,
+    "count": 100
+  }
+]
