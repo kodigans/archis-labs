@@ -11,6 +11,13 @@ var client = new MongoClient(url, { useNewUrlParser: true });
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Content-type', 'application/json; charset=utf-8');
+  next();
+});
+
 app.get('/api/clients', function(req, res) {
   client.connect(function(err) {
     if (err) {
@@ -24,7 +31,7 @@ app.get('/api/clients', function(req, res) {
 
       collection.find({}).toArray(function(err, docs) {
         // сортируем по id
-        var sortedDocs = docs.sort(function(a, b) {
+        var sortedDocs = (docs || []).sort(function(a, b) {
           if (a.id > b.id) {
             return 1;
           } else if (a.id < b.id) {
@@ -62,6 +69,32 @@ app.get('/api/clients/:id', function(req, res) {
   });
 });
 
+app.delete('/api/clients/:id', function(req, res) {
+  client.connect(function(err) {
+    if (err) {
+      console.log(err);
+      res.status(500);
+    } else {
+      console.log('Connected successfully to server');
+
+      var db = client.db(dbName);
+      var collection = db.collection('clients');
+
+      collection.deleteOne({ id: +req.params.id }).then(function(result) {
+        console.log(
+          'Doc with id=' +
+            req.params.id +
+            ' has been successfuly deleted from Сlients'
+        );
+        console.log('Result', result.result);
+        res.send(result);
+      });
+    }
+
+    client.close();
+  });
+});
+
 app.post('/api/clients', function(req, res) {
   client.connect(function(err) {
     if (err) {
@@ -75,12 +108,39 @@ app.post('/api/clients', function(req, res) {
       var collection = db.collection('clients');
 
       collection.insertOne(req.body).then(function(result) {
-        console.log(
-          'New doc has been successfuly inserted into clients',
-          result.result
-        );
+        console.log('New doc has been successfuly inserted into Сlients');
+        console.log('Result', result.result);
         res.send(result);
       });
+    }
+
+    client.close();
+  });
+});
+
+app.put('/api/clients/:id', function(req, res) {
+  client.connect(function(err) {
+    if (err) {
+      console.log(err);
+      res.status(500);
+    } else {
+      console.log('Connected successfully to server');
+      console.log(req.body);
+
+      var db = client.db(dbName);
+      var collection = db.collection('clients');
+
+      collection
+        .updateOne({ id: +req.params.id }, { $set: req.body })
+        .then(function(result) {
+          console.log(
+            'Doc with id=' +
+              req.params.id +
+              ' has been successfuly updated in Сlients'
+          );
+          console.log('Result', result.result);
+          res.send(result);
+        });
     }
 
     client.close();
