@@ -35,7 +35,7 @@ module.exports = {
     contentBase: path.resolve('./'),
     watchContentBase: true,
     compress: true,
-    port: 9000,
+    port: 9017,
     hot: true
   }
 };

@@ -1,7 +1,7 @@
 // импорт из другого файла
 var formDataToJSON = require('./utils').formDataToJSON;
 
-var apiUrl = 'http://localhost:3000/api';
+var apiUrl = 'http://localhost:3017/api';
 
 // ф-ия отрисовки таблицы с данными
 function renderClientsGrid(data) {
@@ -59,6 +59,29 @@ function deleteClient(id) {
     });
 }
 
+// ф-ия заполнения формы для редактирования
+
+function populateEditForm(id) {
+  // делаем GET-запрос и получаем один документ по id
+  fetch(apiUrl + '/clients/' + id)
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      // заполняем форму данными из GET-запроса
+      document.forms.editClientForm.elements.id.value = data.id;
+      document.forms.editClientForm.elements.first_name.value = data.first_name;
+      document.forms.editClientForm.elements.last_name.value = data.last_name;
+      document.forms.editClientForm.elements.gender.value = data.gender;
+      document.forms.editClientForm.elements.date_of_birth.value =
+        data.date_of_birth;
+      document.forms.editClientForm.elements.address.value = data.address;
+      document.forms.editClientForm.elements.phone.value = data.phone;
+      document.forms.editClientForm.elements.email.value = data.email;
+    });
+}
+
 // ф-ия добавления обработчиков на кнопки удаления и обновления
 function addClientRowHandlers() {
   var deleteClientBtnEls = document.getElementsByClassName(
@@ -87,26 +110,7 @@ function addClientRowHandlers() {
         'js-clientId'
       )[0].innerHTML;
 
-      // делаем GET-запрос и получаем одного клиента по id
-      fetch(apiUrl + '/clients/' + id)
-        .then(function(res) {
-          return res.json();
-        })
-        .then(function(data) {
-          console.log(data);
-          // заполняем форму данными из GET-запроса
-          document.forms.editClientForm.elements.id.value = data.id;
-          document.forms.editClientForm.elements.first_name.value =
-            data.first_name;
-          document.forms.editClientForm.elements.last_name.value =
-            data.last_name;
-          document.forms.editClientForm.elements.gender.value = data.gender;
-          document.forms.editClientForm.elements.date_of_birth.value =
-            data.date_of_birth;
-          document.forms.editClientForm.elements.address.value = data.address;
-          document.forms.editClientForm.elements.phone.value = data.phone;
-          document.forms.editClientForm.elements.email.value = data.email;
-        });
+      populateEditForm(id);
     });
   }
 }
@@ -135,7 +139,7 @@ addClientFormEl.addEventListener('submit', function(event) {
 
   var headers = new Headers();
 
-  headers.set('Content-type', 'application/json; charset=utf-8');
+  headers.set('Content-Type', 'application/json; charset=utf-8');
 
   var formData = new FormData(document.forms.addClientForm);
 
@@ -164,7 +168,7 @@ editClientFormEl.addEventListener('submit', function(event) {
 
   var headers = new Headers();
 
-  headers.set('Content-type', 'application/json; charset=utf-8');
+  headers.set('Content-Type', 'application/json; charset=utf-8');
 
   var formData = new FormData(document.forms.editClientForm);
 
