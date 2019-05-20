@@ -37,9 +37,9 @@ function renderClientsGrid(data) {
       '<td>' +
       item.email +
       '</td>' +
-      '<td><button class="js-deleteClientBtn">Delete</button><button class="js-editClientBtn ' +
-      index +
-      '">Edit</button></td>';
+      '<td><button class="js-deleteClientBtn">Delete</button>' +
+      '<button class="js-editClientBtn">Edit</button>' +
+      '<button class="js-showClientDetailsBtn">Show details</button></td>';
     clientsGridEl.appendChild(rowEl);
   });
 }
@@ -60,7 +60,7 @@ function deleteClient(id) {
 }
 
 // ф-ия заполнения формы для редактирования
-function populateEditForm(id) {
+function populateEditClientForm(id) {
   // делаем GET-запрос и получаем один документ по id
   fetch(apiUrl + '/clients/' + id)
     .then(function(res) {
@@ -81,8 +81,17 @@ function populateEditForm(id) {
     });
 }
 
+// ф-ия отрисовки таблицы подробностей
+function renderClientDetailsGrid(id) {
+  // разделить на сбор данных и отрисовку
+  console.log(id);
+
+  var clientDetailsGridEl = document.getElementById('clientDetailsGrid');
+}
+
 // ф-ия добавления обработчиков на кнопки удаления и обновления
 function addClientRowHandlers() {
+  // кнопка DELETE
   var deleteClientBtnEls = document.getElementsByClassName(
     'js-deleteClientBtn'
   );
@@ -90,7 +99,7 @@ function addClientRowHandlers() {
   for (var i = 0; i < deleteClientBtnEls.length; i++) {
     var item = deleteClientBtnEls[i];
 
-    item.addEventListener('click', function() {
+    item.addEventListener('click', function(event) {
       var id = event.target.parentElement.parentElement.getElementsByClassName(
         'js-clientId'
       )[0].innerHTML;
@@ -99,6 +108,7 @@ function addClientRowHandlers() {
     });
   }
 
+  // кнопка EDIT
   var editClientBtnEls = document.getElementsByClassName('js-editClientBtn');
 
   for (var i = 0; i < editClientBtnEls.length; i++) {
@@ -109,7 +119,24 @@ function addClientRowHandlers() {
         'js-clientId'
       )[0].innerHTML;
 
-      populateEditForm(id);
+      populateEditClientForm(id);
+    });
+  }
+
+  // кнопка SHOW DETAILS
+  var showClientDetailsBtnEls = document.getElementsByClassName(
+    'js-showClientDetailsBtn'
+  );
+
+  for (var i = 0; i < showClientDetailsBtnEls.length; i++) {
+    var item = showClientDetailsBtnEls[i];
+
+    item.addEventListener('click', function(event) {
+      var id = event.target.parentElement.parentElement.getElementsByClassName(
+        'js-clientId'
+      )[0].innerHTML;
+
+      renderClientDetailsGrid(id);
     });
   }
 }

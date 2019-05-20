@@ -2,7 +2,7 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
 
-var port = 3017;
+var expressPort = 3017;
 
 var url = 'mongodb://localhost:27017';
 var dbName = 'mydb';
@@ -107,8 +107,8 @@ client.connect(function(err) {
         });
     });
 
-    app.listen(port, function() {
-      console.log('Express is running on port', port);
+    app.listen(expressPort, function() {
+      console.log('Express is running on port', expressPort);
     });
   }
 });
