@@ -60,7 +60,6 @@ function deleteClient(id) {
 }
 
 // ф-ия заполнения формы для редактирования
-
 function populateEditForm(id) {
   // делаем GET-запрос и получаем один документ по id
   fetch(apiUrl + '/clients/' + id)
