@@ -12,6 +12,7 @@ function renderClientsGrid(data) {
 
   data.forEach(function(item, index) {
     var rowEl = document.createElement('tr');
+
     rowEl.innerHTML =
       '<td class="js-clientId">' +
       item.id +
@@ -40,6 +41,7 @@ function renderClientsGrid(data) {
       '<td><button class="js-deleteClientBtn">Delete</button>' +
       '<button class="js-editClientBtn">Edit</button>' +
       '<button class="js-showClientDetailsBtn">Show details</button></td>';
+
     clientsGridEl.appendChild(rowEl);
   });
 }
@@ -82,11 +84,49 @@ function populateEditClientForm(id) {
 }
 
 // ф-ия отрисовки таблицы подробностей
-function renderClientDetailsGrid(id) {
-  // разделить на сбор данных и отрисовку
-  console.log(id);
-
+function renderClientDetailsGrid(data) {
   var clientDetailsGridEl = document.getElementById('clientDetailsGrid');
+
+  // удаляем старые строки
+  clientDetailsGridEl.innerHTML = '';
+
+  data.forEach(function(item, index) {
+    var rowEl = document.createElement('tr');
+
+    rowEl.innerHTML =
+      '<td>' +
+      item.id +
+      '</td>' +
+      '<td>' +
+      item.title +
+      '</td>' +
+      '<td>' +
+      item.description +
+      '</td>' +
+      '<td>' +
+      item.date_of_release +
+      '</td>' +
+      '<td>' +
+      item.price +
+      '</td>' +
+      '<td>' +
+      item.count +
+      '</td>';
+
+    clientDetailsGridEl.appendChild(rowEl);
+  });
+}
+
+// ф-ия обновления (вкл. получение данных) таблицы подробностей
+function refreshClientDetailsGrid(id) {
+  fetch(apiUrl + '/clientDetails/' + id)
+    .then(function(res) {
+      return res.json();
+    })
+    .then(function(data) {
+      console.log(data);
+      renderClientDetailsGrid(data);
+    });
 }
 
 // ф-ия добавления обработчиков на кнопки удаления и обновления
@@ -136,7 +176,7 @@ function addClientRowHandlers() {
         'js-clientId'
       )[0].innerHTML;
 
-      renderClientDetailsGrid(id);
+      refreshClientDetailsGrid(id);
     });
   }
 }
