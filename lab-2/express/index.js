@@ -47,8 +47,8 @@ client.connect(function(err) {
     app.get('/api/clients/:id', function(req, res) {
       var collection = db.collection('clients');
 
-      collection.find({ id: +req.params.id }).toArray(function(err, docs) {
-        res.send(docs[0]);
+      collection.findOne({ id: +req.params.id }).then(function(doc) {
+        res.send(doc);
       });
     });
 
@@ -104,6 +104,30 @@ client.connect(function(err) {
           );
           console.log('Result', result.result);
           res.send(result);
+        });
+    });
+
+    // HARD MODE
+    // получение связанного списка документов для детализации
+    app.get('/api/clientDetails/:id', function(req, res) {
+      var sells = db.collection('sells');
+
+      sells
+        .find({ client_id: +req.params.id })
+        .toArray(function(err, sellsDocs) {
+          var appPromises = sellsDocs.map(function(sellsItem) {
+            var apps = db.collection('apps');
+
+            return apps.findOne({ id: sellsItem.app_id });
+          });
+
+          Promise.all(appPromises).then(function(appDocs) {
+            var aggregatedData = appDocs.map(function(item, index) {
+              return Object.assign({}, item, { count: sellsDocs[index].count });
+            });
+
+            res.send(aggregatedData);
+          });
         });
     });
 
