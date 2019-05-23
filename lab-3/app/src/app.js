@@ -10,6 +10,21 @@ function renderClientsGrid(data) {
   // удаляем старые строки
   clientsGridEl.innerHTML = '';
 
+  var rowEl = document.createElement('tr');
+
+  rowEl.innerHTML =
+    '<th>Id</th>' +
+    '<th>First name</th>' +
+    '<th>Last name</th>' +
+    '<th>Gender</th>' +
+    '<th>Date of birth</th>' +
+    '<th>Address</th>' +
+    '<th>Phone</th>' +
+    '<th>E-mail</th>' +
+    '<th>Actions</th>';
+
+  clientsGridEl.appendChild(rowEl);
+
   data.forEach(function(item, index) {
     var rowEl = document.createElement('tr');
 
@@ -38,9 +53,9 @@ function renderClientsGrid(data) {
       '<td>' +
       item.email +
       '</td>' +
-      '<td><button class="js-deleteClientBtn">Delete</button>' +
-      '<button class="js-editClientBtn">Edit</button>' +
-      '<button class="js-showClientDetailsBtn">Show details</button></td>';
+      '<td><button class="btn btn-outline-danger btn-sm mr-2 mb-2 js-deleteClientBtn">Delete</button>' +
+      '<button class="btn btn-outline-secondary btn-sm mr-2 mb-2 js-editClientBtn">Edit</button>' +
+      '<button class="btn btn-outline-secondary btn-sm mr-2 mb-2 js-showClientDetailsBtn">Show details</button></td>';
 
     clientsGridEl.appendChild(rowEl);
   });
@@ -89,6 +104,18 @@ function renderClientDetailsGrid(data) {
 
   // удаляем старые строки
   clientDetailsGridEl.innerHTML = '';
+
+  var rowEl = document.createElement('tr');
+
+  rowEl.innerHTML =
+    '<th>Id</th>' +
+    '<th>Title</th>' +
+    '<th>Description</th>' +
+    '<th>Date of release</th>' +
+    '<th>Price</th>' +
+    '<th>Count</th>';
+
+  clientDetailsGridEl.appendChild(rowEl);
 
   data.forEach(function(item, index) {
     var rowEl = document.createElement('tr');
